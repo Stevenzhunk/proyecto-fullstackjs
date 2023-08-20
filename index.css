@@ -1,0 +1,78 @@
+/* margen fixeado*/
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* cambio de letra y padding */
+body {
+  font-family: sans-serif;
+  padding: 60px 20px 0;
+}
+
+/* ajuste del nav (header) */
+.header {
+  background-color: #30343F;
+  height: 144px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  /*max-width: 992px;*/
+  margin: 0 auto;
+  flex-wrap: inherit;
+  font-size: 1rem;
+}
+
+.nav-menu {
+  display: flex;
+  margin-right: 110px;
+  list-style: none;
+  margin-top: 30px;
+}
+
+.nav-menu-item {
+  font: size 18px;
+  margin: 0 10px;
+  line-height: 60px;
+  text-transform: uppercase;
+  width: max-content;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 40px;
+  line-height: 60px;
+  margin-top: 30px
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  /*max-width: 992px;*/
+  margin: 0 auto;
+  flex-wrap: inherit;
+  font-size: 1rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.cart-icon{
+  width: 25px;
+}
