@@ -3,4 +3,5 @@ const navList = document.getElementById("nav-list");
 
 mobileMenu.addEventListener("click", () => {
   navList.classList.toggle("active");
+  mobileMenu.classList.toggle("menu-open"); // Agrega o quita la clase menu-open
 });

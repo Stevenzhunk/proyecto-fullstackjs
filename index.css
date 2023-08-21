@@ -110,6 +110,19 @@ body {
   transition: 0.4s;
 }
 
+/* Agrega una clase para rotar las barras y simular un botón de cierre */
+.menu-open .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-open .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {
   .menu-toggle {
