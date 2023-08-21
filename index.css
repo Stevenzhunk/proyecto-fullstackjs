@@ -66,6 +66,10 @@ body {
   color: white;
   text-decoration: none;
 }
+
+.nav-link:hover{
+  color:#ff4848;
+}
 .cart {
   display: flex;
   justify-content: center;
