@@ -13,7 +13,7 @@ body {
 /* ajuste del nav (header) */
 .header {
   background-color: #30343F;
-  height: 144px;
+  height: 135px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -32,13 +32,12 @@ body {
 
 .nav-menu {
   display: flex;
-  margin-right: 110px;
   list-style: none;
   margin-top: 35px;
+  padding: 0 35px;
 }
 
 .nav-menu-item {
-  font: size 18px;
   margin: 0 10px;
   line-height: 60px;
   text-transform: uppercase;
@@ -50,7 +49,10 @@ body {
   font-weight: bold;
   padding: 0 40px;
   line-height: 60px;
-  margin-top: 30px
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  justify-content: center;
 }
 
 .nav {
@@ -70,6 +72,19 @@ body {
 .nav-link:hover{
   color:#ff4848;
 }
+
+.nav-toggle {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
+
+  display: none;
+}
+
 .cart {
   display: flex;
   justify-content: center;
@@ -80,3 +95,49 @@ body {
 .cart-icon{
   width: 25px;
 }
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 4px;
+  background-color: #ffffff;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+  .menu-toggle {
+      display: flex;
+      margin: 50px;
+  }
+  .nav-menu {
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #f5f5f5;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .nav-menu.active {
+      display: flex;
+      flex-direction: column;
+      background-color: #30343f;
+      margin-top: 70px;
+  }
+  .cart {
+    padding-bottom: 35px;
+  }
+  
+}
+/*responsive*/
+
+
+
