@@ -8,7 +8,6 @@
 /* cambio de letra y padding */
 body {
   font-family: sans-serif;
-  padding: 60px 20px 0;
 }
 
 /* ajuste del nav (header) */
@@ -22,6 +21,10 @@ body {
   z-index: 1;
 }
 
+main {
+  padding: 60px 60px 90px;
+  margin-bottom: 30px;
+}
 .nav {
   display: flex;
   justify-content: space-between;
