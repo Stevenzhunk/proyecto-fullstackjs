@@ -1,6 +1,6 @@
-/*fonts*/ 
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+/*fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 /* margen fixeado*/
 * {
@@ -16,7 +16,7 @@ body {
 
 /* ajuste del nav (header) */
 .header {
-  background-color: #30343F;
+  background-color: #30343f;
   height: 135px;
   position: fixed;
   width: 100%;
@@ -77,8 +77,8 @@ main {
   text-decoration: none;
 }
 
-.nav-link:hover{
-  color:#ff4848;
+.nav-link:hover {
+  color: #ff4848;
 }
 
 .nav-toggle {
@@ -99,51 +99,47 @@ main {
   margin-top: 15px;
 }
 
-.cart-icon{
+.cart-icon {
   width: 25px;
 }
 
 /* Agregamos estilos al banner */
 #hero_banner {
-  position: relative; 
-  overflow: hidden; 
+  position: relative;
+  overflow: hidden;
   width: 100%;
   height: 388px;
   margin-top: 135px;
 }
 
-
-
 #hero_banner .bac {
-  position: absolute; 
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/img/funkos-banner.webp'); 
-  background-size: cover; 
-  z-index: -1; 
+  background-image: url("/img/funkos-banner.webp");
+  background-size: cover;
+  z-index: -1;
   border: 1px solid transparent;
   background-position: bottom;
   filter: blur(1px);
 }
 
-
 #hero_banner article {
   margin-top: -30px;
-  padding: 130px; 
-  z-index: 1; 
+  padding: 130px;
+  z-index: 1;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-
 #hero_banner article a {
-  display:flex;
-  background-color: #fff; 
-  color: black; 
-  padding: 10px 20px; 
-  text-decoration: none; 
-  border-radius: 30px; 
+  display: flex;
+  background-color: #fff;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 30px;
   width: 211px;
   justify-content: center;
   font-family: Inter;
@@ -152,7 +148,7 @@ main {
   line-height: 24px;
   letter-spacing: 0em;
 }
-#hero_banner article a:hover{
+#hero_banner article a:hover {
   background-color: #ff4848;
   color: white;
 }
@@ -164,13 +160,13 @@ main {
   line-height: 45px;
   letter-spacing: 0em;
   text-align: left;
-  margin:0 0 5px ;
-  color:#ffffff
+  margin: 0 0 5px;
+  color: #ffffff;
 }
 
-#hero_banner article p{
+#hero_banner article p {
   margin: 0 0 40px;
-  color:#fff;
+  color: #fff;
   font-family: Raleway;
   font-size: 18px;
   font-weight: 400;
@@ -180,8 +176,8 @@ main {
 }
 
 /* agregamos estilos al footer */
-.footer{
-  background-color: #30343F;
+.footer {
+  background-color: #30343f;
   bottom: 0px;
   left: 0px;
   width: 100%;
@@ -190,27 +186,26 @@ main {
   padding-left: 110px;
   padding-right: 110px;
 }
-.footer-container{
-
- display: flex;
- flex-direction: row;
- justify-content: space-between;
- padding-top: 124px;
- padding-bottom: 57px;
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 124px;
+  padding-bottom: 57px;
 }
-.footer-li-item{
+.footer-li-item {
   padding-top: 8px;
 }
 
-.footer-link{
+.footer-link {
   list-style: none;
 }
-#footer-p{
+#footer-p {
   color: #ffffff;
   display: flex;
   justify-content: center;
 }
-#isotype{
+#isotype {
   width: 143px;
 }
 
@@ -244,30 +239,27 @@ main {
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {
   .menu-toggle {
-      display: flex;
-      margin: 50px;
+    display: flex;
+    margin: 50px;
   }
   .nav-menu {
-      display: none;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      width: 100%;
-      background-color: #f5f5f5;
-      text-align: center;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   .nav-menu.active {
-      display: flex;
-      flex-direction: column;
-      background-color: #30343f;
-      margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    background-color: #30343f;
+    margin-top: 70px;
   }
   .cart {
     padding-bottom: 35px;
   }
 }
 /*responsive*/
-
-
-
