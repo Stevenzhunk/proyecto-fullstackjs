@@ -279,6 +279,7 @@ main {
   .footer-container {
     display: grid;
     padding-top: 50px;
+    justify-content: center;
   }
   #isotype {
     padding-top: 20px;
