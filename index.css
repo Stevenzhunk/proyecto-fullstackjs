@@ -236,6 +236,10 @@ main {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
+.navfull {
+  height: 100%;
+}
+
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {
   .menu-toggle {
@@ -250,7 +254,6 @@ main {
     width: 100%;
     background-color: #f5f5f5;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   .nav-menu.active {
     display: flex;
@@ -271,7 +274,20 @@ main {
     height: 100%;
   }
   .footer-container {
-    display: flex;
+    display: grid;
+    padding-top: 50px;
+  }
+  #isotype {
+    padding-top: 20px;
+  }
+  .footer {
+    height: 100%;
+  }
+  .footer-link {
+    margin: 0 0 30px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
   }
 }
 /*responsive*/
