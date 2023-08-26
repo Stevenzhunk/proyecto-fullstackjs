@@ -261,5 +261,17 @@ main {
   .cart {
     padding-bottom: 35px;
   }
+  img {
+    max-width: 100%;
+  }
+  main {
+    max-width: 100%;
+  }
+  #hero_banner {
+    height: 100%;
+  }
+  .footer-container {
+    display: flex;
+  }
 }
 /*responsive*/
