@@ -346,3 +346,17 @@ main {
   }
 }
 /*responsive*/
+
+/*secciones del shop*/
+
+.productos {
+  display: inline-block;
+}
+
+#label-buscar {
+  display: block;
+}
+
+#ordenar {
+  display: block;
+}
