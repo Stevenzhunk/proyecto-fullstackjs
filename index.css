@@ -277,6 +277,80 @@ main {
   justify-content: center;
   align-content: center;
 }
+/* Seccion ultimos lanzamientos */
+
+.lanzamientos h2{
+  color: #111111;
+  font-size: 46px;
+  font-family: Raleway;
+  font-weight: 700;
+  text-transform: uppercase;
+  word-wrap: break-word
+}
+
+.ultimos_lanzamientos {  
+  width: 100%;  
+}
+
+.lanzamientos_lista{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;  
+  list-style: none;
+  padding: 2rem;  
+}
+
+.lanzamientos_lista a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nuevo{
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  padding: 7px 20px;
+  background-color: #ff3333;
+  color: #f5f5f5;
+  border-radius: 7px;  
+}
+
+.lanzamientos img{
+  width: 18rem;
+}
+
+.articulo{
+  position: relative;
+  font-family: Inter;
+  word-wrap: break-word
+}
+
+.articulo_franquicia{
+  color: #333333;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.articulo_titulo{
+  color: #111111;
+  font-size: 18px;  
+  font-weight: 700;
+ 
+}
+
+.articulo_precio{
+  color: #333333;
+  font-size: 16px;  
+  font-weight: 400;
+  
+}
+
+.articulo_cuotas{
+  color: #1D84B5;
+  font-size: 12px;  
+  font-weight: 700;
+}
+
 /* styles.css */
 .line {
   width: 645px;
@@ -344,8 +418,20 @@ main {
   article {
     margin-bottom: 50px;
   }
+
+  /* Ultimos lanzamientos */
+
+  .lanzamientos_lista{
+    flex-direction: column;
+  }
+
+  .lanzamientos h2{
+    font-size: 26px;    
+  }
+
 }
 /*responsive*/
+
 
 /*secciones del shop*/
 
