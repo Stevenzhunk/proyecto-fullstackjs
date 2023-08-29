@@ -49,6 +49,7 @@
         </div>
       </nav>
     </header>
+<<<<<<< HEAD
     <aside>
       <form action="#">
         <label for="">BUSCAR</label>
@@ -236,6 +237,216 @@
             </article>
           </li>
         </ul>
+=======
+    <main>
+      <section class="buscador">
+        <!-- seccion del buscador de la izquierda, no sé cómo posicionarlo sin CSS -->
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <form method="get">
+          <label for="buscar" id="label-buscar">BUSCAR</label>
+          <input
+            type="text"
+            name="buscar"
+            id="buscar"
+            placeholder="item o categoria"
+          />
+        </form>
+        <br>
+        <form method="get">
+          <label for="ordenar" id="label-ordenar">ORDENAR POR</label>
+          <select name="ordenar" id="ordenar">
+            <option value="mayor-menor">Mayor a menor</option>
+            <option value="menor-mayor">Menor a mayor</option>
+            <option value="alfabetico">Alfabético</option>
+          </select>
+        </form>
+        <br>
+        <div>
+          <p>PRECIO</p>
+          <form method="get">
+            <label for="preciomin" id="label-preciomin">MIN</label>
+            <input
+              type="number"
+              name="preciomin"
+              id="preciomin"
+              value="0"
+            />
+            <form method="get">
+              <label for="preciomax" id="label-preciomax"> - MAX</label>
+              <input
+                type="number"
+                name="preciomax"
+                id="preciomax"
+                value="0"
+              />
+        </div>
+        <br>
+        <div>
+           <!-- PENDIENTE: convertirlos en block o algo para que las opciones se desplieguen hacia abajo -->
+          <p>FILTRAR</p>
+          <form method="get">
+            <input
+              type="checkbox"
+              name="filtrar"
+              id="filtrar"
+              value="nuevos"
+            />
+            <label for="">NUEVOS</label>
+            <input
+              type="checkbox"
+              name="filtrar"
+              id="filtrar"
+              value="ofertas"
+            />
+            <label for="">OFERTAS</label>
+            <input
+              type="checkbox"
+              name="filtrar"
+              id="filtrar"
+              value="edespecial"
+            />
+            <label for="">EDICIÓN ESPECIAL</label>
+            <input
+              type="checkbox"
+              name="filtrar"
+              id="filtrar"
+              value="favoritos"
+            />
+            <label for="">FAVORITOS</label>
+        </div>
+      </section>
+      <section class="shop">
+        <!-- por ahora no les pongo link porque sólo con el <a> me pintaba todo el texto, 
+          quiero buscar como se clickee en cualquier parte del article y se active link -->
+        <article class="productos">
+          <picture>
+            <img src="/img/star-wars/trooper-1.webp" alt="trooper" />
+            </picture>
+            <div>
+              <p>STAR WARS</p>
+              <p>STORMTROOPER LIGHTSABER</p>
+              <p>$ 1799,99</p>
+              <p>3 CUOTAS SIN INTERÉS</p>
+            </div>
+        </article>
+        <article class="productos">
+            <picture>
+              <img
+                src="/img/pokemon/pidgeotto-1.webp"
+                alt="Figura de pajaro pokemon"
+              />
+            </picture>
+            <div>
+              <p>POKEMON</p>
+              <h4>PIDGEOTTO</h4>
+              <p>$ 1799,99</p>
+              <p>3 CUOTAS SIN INTERÉS</p>
+            </div>
+        </article>
+        <article class="productos">
+            <picture>
+              <img
+                src="/img/harry-potter/luna-1.webp"
+                alt="Figura de un personaje de Harry Potter"
+              />
+            </picture>
+            <div>
+              <p>HARRY POTTER</p>
+              <h4>LUNA LOVEGOOD LION MASK</h4>
+              <p>$ 1799,99</p>
+              <p>3 CUOTAS SIN INTERÉS</p>
+            </div>
+        </article>
+        <article class="productos">
+          <picture>
+            <img src="/img/star-wars/trooper-1.webp" alt="trooper" />
+            </picture>
+            <div>
+              <p>STAR WARS</p>
+              <p>STORMTROOPER LIGHTSABER</p>
+              <p>$ 1799,99</p>
+              <p>3 CUOTAS SIN INTERÉS</p>
+            </div>
+        </article>
+        <article class="productos">
+            <picture>
+              <img
+                src="/img/pokemon/pidgeotto-1.webp"
+                alt="Figura de pajaro pokemon"
+              />
+            </picture>
+            <div>
+              <p>POKEMON</p>
+              <h4>PIDGEOTTO</h4>
+              <p>$ 1799,99</p>
+              <p>3 CUOTAS SIN INTERÉS</p>
+            </div>
+        </article>
+        <article class="productos">
+            <picture>
+              <img
+                src="/img/harry-potter/luna-1.webp"
+                alt="Figura de un personaje de Harry Potter"
+              />
+            </picture>
+            <div>
+              <p>HARRY POTTER</p>
+              <h4>LUNA LOVEGOOD LION MASK</h4>
+              <p>$ 1799,99</p>
+              <p>3 CUOTAS SIN INTERÉS</p>
+            </div>
+        </article>
+        <article class="productos">
+          <picture>
+            <img src="/img/star-wars/trooper-1.webp" alt="trooper" />
+            </picture>
+            <div>
+              <p>STAR WARS</p>
+              <p>STORMTROOPER LIGHTSABER</p>
+              <p>$ 1799,99</p>
+              <p>3 CUOTAS SIN INTERÉS</p>
+            </div>
+        </article>
+        <article class="productos">
+            <picture>
+              <img
+                src="/img/pokemon/pidgeotto-1.webp"
+                alt="Figura de pajaro pokemon"
+              />
+            </picture>
+            <div>
+              <p>POKEMON</p>
+              <h4>PIDGEOTTO</h4>
+              <p>$ 1799,99</p>
+              <p>3 CUOTAS SIN INTERÉS</p>
+            </div>
+        </article>
+        <article class="productos">
+            <picture>
+              <img
+                src="/img/harry-potter/luna-1.webp"
+                alt="Figura de un personaje de Harry Potter"
+              />
+            </picture>
+            <div>
+              <p>HARRY POTTER</p>
+              <h4>LUNA LOVEGOOD LION MASK</h4>
+              <p>$ 1799,99</p>
+              <p>3 CUOTAS SIN INTERÉS</p>
+            </div>
+        </article>      
+      </section>
+      <br>
+      <section class="paginas">
+        <!-- por ahora sin links -->
+        <button type=submit>&lt</button>
+        <button type=submit>1</button>
+        <button type=submit>2</button>
+        <button type=submit>...</button>
+        <button type=submit>9</button>
+        <button type=submit>10</button>
+        <button type=submit>&gt</button>
+>>>>>>> f920abe2d72e550650348eb3011c8da32d83443e
       </section>
     </main>
     <footer class="footer">
