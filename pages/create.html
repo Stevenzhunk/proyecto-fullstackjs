@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../index.css" />
     <link
       rel="shortcut icon"
-      href="./img/branding/isotype.svg"
+      href="../img/branding/isotype.svg"
       type="image/x-icon"
     />
   </head>
@@ -17,33 +17,20 @@
         <picture class="logo">
           <a href="../index.html">
             <img
-              src="./img/branding/logo_light_horizontal.svg"
+              src="../img/branding/logo_light_horizontal.svg"
               alt="Logo de la marca"
             />
           </a>
         </picture>
         <ul class="nav-menu" id="nav-list">
           <li class="nav-menu-item">
-            <a href="./pages/shop.html" class="nav-menu-link nav-link">SHOP</a>
+            <a href="shop.html" class="nav-menu-link nav-link">VER TIENDA</a>
           </li>
           <li class="nav-menu-item">
-            <a href="./pages/contact.html" class="nav-menu-link nav-link"
-              >CONTACTO</a
-            >
+            <a href="contact.html" class="nav-menu-link nav-link">ADMIN</a>
           </li>
           <li class="nav-menu-item">
-            <a href="./pages/login.html" class="nav-menu-link nav-link"
-              >LOGIN</a
-            >
-          </li>
-          <li class="nav-menu-item">
-            <a href="./pages/cart.html" class="cart">
-              <img
-                class="cart-icon"
-                src="./img/icons/cart-icon.svg"
-                alt="icono de carrito de compras"
-              />
-            </a>
+            <a href="login.html" class="nav-menu-link nav-link">SALIR</a>
           </li>
         </ul>
         <div class="menu-toggle" id="mobile-menu">
@@ -53,31 +40,84 @@
         </div>
       </nav>
     </header>
+    <main class="main_edit">
+      <h1>CREAR NUEVO ITEM</h1>
+      <form action="">
+        <label for="">Categoria:</label>
+        <select name="" id="">
+          <option value="" disabled selected hidden>Seleccionar</option>
+          <option value="value1">Figuras</option>
+        </select>
+        <label for="">Licencia:</label>
+        <select name="" id="">
+          <option value="" disabled selected hidden>Seleccionar</option>
+          <option value="value1">Naruto Shippuden</option>
+          <option value="value2">Star Wars</option>
+          <option value="value3">Pokemon</option>
+          <option value="value4">Harry Potter</option>
+        </select>
+        <label for="">Nombre del producto:</label>
+        <input type="text" placeholder="Kakashi Hatake Shippuden Saga" />
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Descripción del producto"
+        ></textarea>
+        <label for="">SKU:</label>
+        <input type="text" name="" id="" placeholder="SSK111AB001" />
+        <label for="">Precio:</label>
+        <input type="number" placeholder="$ 0.000,00" />
+        <label for="">Stock:</label>
+        <input type="number" placeholder="0" />
+        <label for="">Descuento</label>
+        <input type="number" placeholder="0%" />
+        <label for="">Cuotas:</label>
+        <select name="" id="">
+          <option value="" disabled selected hidden>
+            3 Cuotas sin interes
+          </option>
+          <option value="value1">3 Cuotas sin interes</option>
+          <option value="value2">6 Cuotas sin interes</option>
+          <option value="value3">12 Cuotas sin interes</option>
+          <option value="value4">18 Cuotas sin interes</option>
+        </select>
+        <label for="">Imagenes:</label>
+        <input type="file" name="" id="" />
+        <p>No se ha seleccionado ningun archivo</p>
+        <div>
+          <input type="submit" value="Agregar Producto" />
+          <input type="reset" value="Limpiar" />
+        </div>
+      </form>
+    </main>
     <footer class="footer">
       <container class="footer-container">
         <ul class="footer-link">
           <li class="footer-li-item">
-            <a href="./pages/shop.html" class="nav-menu-link nav-link">SHOP</a>
+            <a href="shop.html" class="nav-menu-link nav-link">SHOP</a>
           </li>
           <li class="footer-li-item">
-            <a href="./pages/contact.html" class="nav-menu-link nav-link"
-              >CONTACTO</a
+            <a href="contact.html" class="nav-menu-link nav-link"
+              >REGISTRARSE</a
             >
           </li>
           <li class="footer-li-item">
-            <a href="./pages/login.html" class="nav-menu-link nav-link"
-              >LOGIN</a
-            >
+            <a href="contact.html" class="nav-menu-link nav-link">INGRESASR</a>
+          </li>
+          <li class="footer-li-item">
+            <a href="contact.html" class="nav-menu-link nav-link">CONTACTO</a>
           </li>
         </ul>
         <img
           id="isotype"
-          src="./img/branding/isotype.svg"
+          src="../img/branding/isotype.svg"
           alt="Logo de la marca"
         />
       </container>
       <p id="footer-p">All rights reserved 2023 - Funkoshop &copy</p>
     </footer>
-    <script src="index.js"></script>
+    <script src="../index.js"></script>
   </body>
 </html>
