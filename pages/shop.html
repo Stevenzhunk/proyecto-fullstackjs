@@ -62,7 +62,7 @@
             placeholder="item o categoria"
           />
         </form>
-        <br>
+        <br />
         <form method="get">
           <label for="ordenar" id="label-ordenar">ORDENAR POR</label>
           <select name="ordenar" id="ordenar">
@@ -71,7 +71,7 @@
             <option value="alfabetico">Alfabético</option>
           </select>
         </form>
-        <br>
+        <br />
         <div>
           <p>PRECIO</p>
           <form method="get">
@@ -82,7 +82,7 @@
               name="preciomin"
               id="preciomin"
               value="0"
-              style="width: 30px;"
+              style="width: 30px"
             />
             <form method="get">
               <label for="preciomax" id="label-preciomax"> - MAX</label>
@@ -91,21 +91,18 @@
                 name="preciomax"
                 id="preciomax"
                 value="0"
-                style="width: 30px;"
+                style="width: 30px"
               />
+            </form>
+          </form>
         </div>
-        <br>
+        <br />
         <div>
           <p>FILTRAR</p>
           <form method="get">
-            <input
-              type="checkbox"
-              name="filtrar"
-              id="filtrar"
-              value="nuevos"
-            />
+            <input type="checkbox" name="filtrar" id="filtrar" value="nuevos" />
             <label for="">NUEVOS</label>
-            <br>
+            <br />
             <input
               type="checkbox"
               name="filtrar"
@@ -113,7 +110,7 @@
               value="ofertas"
             />
             <label for="">OFERTAS</label>
-            <br>
+            <br />
             <input
               type="checkbox"
               name="filtrar"
@@ -121,7 +118,7 @@
               value="edespecial"
             />
             <label for="">EDICIÓN ESPECIAL</label>
-            <br>
+            <br />
             <input
               type="checkbox"
               name="filtrar"
@@ -129,10 +126,11 @@
               value="favoritos"
             />
             <label for="">FAVORITOS</label>
+          </form>
         </div>
       </section>
       <section class="shop">
-        <br><br><br><br><br>
+        <br /><br /><br /><br /><br />
         <ul class="shop_lista">
           <li>
             <article class="productos">
@@ -140,7 +138,11 @@
                 <div class="nuevo">Nuevo</div>
                 <!-- PENDIENTE: arreglar que nuevo no se vaya a la derecha -->
                 <picture>
-                <img src="/img/star-wars/trooper-1.webp" alt="trooper" />
+                  <img
+                    class="img-shop"
+                    src="/img/star-wars/trooper-1.webp"
+                    alt="trooper"
+                  />
                 </picture>
                 <div>
                   <p class="articulo_franquicia">STAR WARS</p>
@@ -157,8 +159,10 @@
                 <div class="nuevo">Nuevo</div>
                 <picture>
                   <img
+                    class="img-shop"
                     src="/img/pokemon/pidgeotto-1.webp"
-                    alt="Figura de pajaro pokemon"/>
+                    alt="Figura de pajaro pokemon"
+                  />
                 </picture>
                 <div>
                   <p class="articulo_franquicia">POKEMON</p>
@@ -174,17 +178,18 @@
               <a href="/pages/item.html">
                 <div class="nuevo">Nuevo</div>
                 <picture>
-                    <img
-                      src="/img/harry-potter/luna-1.webp"
-                      alt="Figura de un personaje de Harry Potter"
-                    />
-                  </picture>
-                  <div>
-                    <p class="articulo_franquicia">HARRY POTTER</p>
-                    <h4 class="articulo_titulo">LUNA LOVEGOOD LION MASK</h4>
-                    <p class="articulo_precio">$ 1799,99</p>
-                    <p class="articulo_cuotas">3 CUOTAS SIN INTERÉS</p>
-                  </div>
+                  <img
+                    class="img-shop"
+                    src="/img/harry-potter/luna-1.webp"
+                    alt="Figura de un personaje de Harry Potter"
+                  />
+                </picture>
+                <div>
+                  <p class="articulo_franquicia">HARRY POTTER</p>
+                  <h4 class="articulo_titulo">LUNA LOVEGOOD LION MASK</h4>
+                  <p class="articulo_precio">$ 1799,99</p>
+                  <p class="articulo_cuotas">3 CUOTAS SIN INTERÉS</p>
+                </div>
               </a>
             </article>
           </li>
@@ -193,7 +198,11 @@
               <a href="/pages/item.html">
                 <div class="nuevo">Nuevo</div>
                 <picture>
-                <img src="/img/star-wars/trooper-1.webp" alt="trooper" />
+                  <img
+                    class="img-shop"
+                    src="/img/star-wars/trooper-1.webp"
+                    alt="trooper"
+                  />
                 </picture>
                 <div>
                   <p class="articulo_franquicia">STAR WARS</p>
@@ -210,8 +219,10 @@
                 <div class="nuevo">Nuevo</div>
                 <picture>
                   <img
+                    class="img-shop"
                     src="/img/pokemon/pidgeotto-1.webp"
-                    alt="Figura de pajaro pokemon"/>
+                    alt="Figura de pajaro pokemon"
+                  />
                 </picture>
                 <div>
                   <p class="articulo_franquicia">POKEMON</p>
@@ -227,17 +238,18 @@
               <a href="/pages/item.html">
                 <div class="nuevo">Nuevo</div>
                 <picture>
-                    <img
-                      src="/img/harry-potter/luna-1.webp"
-                      alt="Figura de un personaje de Harry Potter"
-                    />
-                  </picture>
-                  <div>
-                    <p class="articulo_franquicia">HARRY POTTER</p>
-                    <h4 class="articulo_titulo">LUNA LOVEGOOD LION MASK</h4>
-                    <p class="articulo_precio">$ 1799,99</p>
-                    <p class="articulo_cuotas">3 CUOTAS SIN INTERÉS</p>
-                  </div>
+                  <img
+                    class="img-shop"
+                    src="/img/harry-potter/luna-1.webp"
+                    alt="Figura de un personaje de Harry Potter"
+                  />
+                </picture>
+                <div>
+                  <p class="articulo_franquicia">HARRY POTTER</p>
+                  <h4 class="articulo_titulo">LUNA LOVEGOOD LION MASK</h4>
+                  <p class="articulo_precio">$ 1799,99</p>
+                  <p class="articulo_cuotas">3 CUOTAS SIN INTERÉS</p>
+                </div>
               </a>
             </article>
           </li>
@@ -246,7 +258,11 @@
               <a href="/pages/item.html">
                 <div class="nuevo">Nuevo</div>
                 <picture>
-                <img src="/img/star-wars/trooper-1.webp" alt="trooper" />
+                  <img
+                    class="img-shop"
+                    src="/img/star-wars/trooper-1.webp"
+                    alt="trooper"
+                  />
                 </picture>
                 <div>
                   <p class="articulo_franquicia">STAR WARS</p>
@@ -263,8 +279,10 @@
                 <div class="nuevo">Nuevo</div>
                 <picture>
                   <img
+                    class="img-shop"
                     src="/img/pokemon/pidgeotto-1.webp"
-                    alt="Figura de pajaro pokemon"/>
+                    alt="Figura de pajaro pokemon"
+                  />
                 </picture>
                 <div>
                   <p class="articulo_franquicia">POKEMON</p>
@@ -280,31 +298,32 @@
               <a href="/pages/item.html">
                 <div class="nuevo">Nuevo</div>
                 <picture>
-                    <img
-                      src="/img/harry-potter/luna-1.webp"
-                      alt="Figura de un personaje de Harry Potter"
-                    />
-                  </picture>
-                  <div>
-                    <p class="articulo_franquicia">HARRY POTTER</p>
-                    <h4 class="articulo_titulo">LUNA LOVEGOOD LION MASK</h4>
-                    <p class="articulo_precio">$ 1799,99</p>
-                    <p class="articulo_cuotas">3 CUOTAS SIN INTERÉS</p>
-                  </div>
+                  <img
+                    class="img-shop"
+                    src="/img/harry-potter/luna-1.webp"
+                    alt="Figura de un personaje de Harry Potter"
+                  />
+                </picture>
+                <div>
+                  <p class="articulo_franquicia">HARRY POTTER</p>
+                  <h4 class="articulo_titulo">LUNA LOVEGOOD LION MASK</h4>
+                  <p class="articulo_precio">$ 1799,99</p>
+                  <p class="articulo_cuotas">3 CUOTAS SIN INTERÉS</p>
+                </div>
               </a>
             </article>
           </li>
         </ul>
-        <br><br><br>
+        <br /><br /><br />
         <div class="shop_paginas">
           <!-- PENDIENTE: por ahora sin links -->
-          <button type=submit>&lt</button>
-          <button type=submit>1</button>
-          <button type=submit>2</button>
-          <button type=submit>...</button>
-          <button type=submit>9</button>
-          <button type=submit>10</button>
-          <button type=submit>&gt</button>
+          <button type="submit">&lt</button>
+          <button type="submit">1</button>
+          <button type="submit">2</button>
+          <button type="submit">...</button>
+          <button type="submit">9</button>
+          <button type="submit">10</button>
+          <button type="submit">&gt</button>
         </div>
       </section>
     </main>

@@ -356,6 +356,34 @@ main {
   background-color: #ff3333;
   margin: 0 0 33px;
 }
+/*style imagen shop*/
+.img-shop {
+  width: 20em;
+}
+/*secciones del shop*/
+
+.shop_main {
+  display: flex;
+}
+
+.shop_buscador {
+  min-width: 200px;
+}
+
+.shop_lista {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.shop_lista a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.shop_paginas {
+  align-self: stretch;
+}
 
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {
@@ -426,33 +454,13 @@ main {
   .lanzamientos h2 {
     font-size: 26px;
   }
+  /*responsive shop*/
+  .shop_main {
+    display: grid;
+  }
 }
 /*responsive*/
 
-/*secciones del shop*/
-
-.shop_main {
-  display: flex;
-}
-
-.shop_buscador {
-  min-width: 200px;
-}
-
-.shop_lista {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-}
-
-.shop_lista a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.shop_paginas {
-  align-self: stretch;
-}
 /* reparar shop_paginas para que quede centrado */
 
 /* 
