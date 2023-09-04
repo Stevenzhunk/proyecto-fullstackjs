@@ -284,25 +284,25 @@ main {
 }
 /* Seccion ultimos lanzamientos */
 
-.lanzamientos h2{
+.lanzamientos h2 {
   color: #111111;
   font-size: 46px;
   font-family: Raleway;
   font-weight: 700;
   text-transform: uppercase;
-  word-wrap: break-word
+  word-wrap: break-word;
 }
 
-.ultimos_lanzamientos {  
-  width: 100%;  
+.ultimos_lanzamientos {
+  width: 100%;
 }
 
-.lanzamientos_lista{
+.lanzamientos_lista {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;  
+  justify-content: space-around;
   list-style: none;
-  padding: 2rem;  
+  padding: 2rem;
 }
 
 .lanzamientos_lista a {
@@ -310,49 +310,47 @@ main {
   color: inherit;
 }
 
-.nuevo{
+.nuevo {
   display: inline-block;
   position: absolute;
   right: 0px;
   padding: 7px 20px;
   background-color: #ff3333;
   color: #f5f5f5;
-  border-radius: 7px;  
+  border-radius: 7px;
 }
 
-.lanzamientos img{
+.lanzamientos img {
   width: 18rem;
 }
 
-.articulo{
+.articulo {
   position: relative;
   font-family: Inter;
-  word-wrap: break-word
+  word-wrap: break-word;
 }
 
-.articulo_franquicia{
+.articulo_franquicia {
   color: #333333;
   font-size: 14px;
   font-weight: 500;
 }
 
-.articulo_titulo{
+.articulo_titulo {
   color: #111111;
-  font-size: 18px;  
+  font-size: 18px;
   font-weight: 700;
- 
 }
 
-.articulo_precio{
+.articulo_precio {
   color: #333333;
-  font-size: 16px;  
+  font-size: 16px;
   font-weight: 400;
-  
 }
 
-.articulo_cuotas{
-  color: #1D84B5;
-  font-size: 12px;  
+.articulo_cuotas {
+  color: #1d84b5;
+  font-size: 12px;
   font-weight: 700;
 }
 
@@ -362,6 +360,34 @@ main {
   height: 3px;
   background-color: #ff3333;
   margin: 0 0 33px;
+}
+/*style imagen shop*/
+.img-shop {
+  width: 20em;
+}
+/*secciones del shop*/
+
+.shop_main {
+  display: flex;
+}
+
+.shop_buscador {
+  min-width: 200px;
+}
+
+.shop_lista {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.shop_lista a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.shop_paginas {
+  align-self: stretch;
 }
 
 /* Media query para dispositivos móviles */
@@ -426,19 +452,23 @@ main {
 
   /* Ultimos lanzamientos */
 
-  .lanzamientos_lista{
+  .lanzamientos_lista {
     flex-direction: column;
   }
 
-  .lanzamientos h2{
-    font-size: 26px;    
+  .lanzamientos h2 {
+    font-size: 26px;
   }
-
+  /*responsive shop*/
+  .shop_main {
+    display: grid;
+  }
 }
 /*responsive*/
 
+/* reparar shop_paginas para que quede centrado */
 
-/*secciones del shop*/
+/* 
 
 .productos {
   display: inline-block;
@@ -451,3 +481,5 @@ main {
 #ordenar {
   display: block;
 }
+
+ */
