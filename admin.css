@@ -1,4 +1,6 @@
 
+/*estilos del main */
+
 .main_edit{
     width: 70%;
     margin-left: 80px;
@@ -10,6 +12,23 @@ h1{
     font-family: Raleway;
     font-weight: 700;
     letter-spacing: 1.68px;
+    word-wrap: break-word
+}
+
+/*Aca estan los tamaño de los input*/
+
+input{
+    margin-right: 30px;
+    padding: 2px;    
+}
+
+.input_texto{
+    color: #313131;
+    width: 243.03px;
+    height: 30.8px;
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 500;
     word-wrap: break-word
 }
 
@@ -33,8 +52,6 @@ label{
     word-wrap: break-word;
 }
 
-
-
 .input_chico{
     width: 45px;
 }
@@ -44,14 +61,18 @@ label{
 }
 
 .input_grande{
-    width: 300px;
+    width: 310px;
 }
+
+/*Esto es para sacar las flechitas del input Number*/
 
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
   margin: 0; 
 }
+
+/**/
 
 .renglon1{
     display: flex;
@@ -80,11 +101,7 @@ option{
     border-bottom: solid #FF3333 2px;
 }
 
-input{
-    margin-right: 30px;
-    padding: 2px;
-    
-}
+
 
 textarea{
     text-align: left; 
@@ -100,6 +117,8 @@ textarea{
     border: 0.50px #1F1F1F solid;
 }
 
+/*Estilo de los botones*/
+
 .boton_rojo{
     background: #FF3333;
     padding: 10px 30px ;
@@ -108,5 +127,27 @@ textarea{
     font-size: 14px;
     font-family: Inter;
     font-weight: 600;
+    word-wrap: break-word;
+}
+
+/*Estilo imagenes */
+
+.imagenesfiguras{
+    width: 150px;
+
+}
+
+.figuras_imagenes{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.imagenesYTexto{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-family: Raleway;
+    font-weight: 500;
     word-wrap: break-word
 }
