@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FunkoShop</title>
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="../admin.css" />
+    <link
+      rel="shortcut icon"
+      href="../img/branding/isotype.svg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <picture class="logo">
+          <a href="../index.html">
+            <img
+              src="../img/branding/logo_light_horizontal.svg"
+              alt="Logo de la marca"
+            />
+          </a>
+        </picture>
+        <ul class="nav-menu" id="nav-list">
+          <li class="nav-menu-item">
+            <a href="shop.html" class="nav-menu-link nav-link">SHOP</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="contact.html" class="nav-menu-link nav-link">CONTACTO</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="login.html" class="nav-menu-link nav-link">LOGIN</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="cart.html" class="cart">
+              <img
+                class="cart-icon"
+                src="../img/icons/cart-icon.svg"
+                alt="icono de carrito de compras"
+              />
+            </a>
+          </li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <main class="main-register">
+      <h1 class="title-register">CREA TU CUENTA</h1>
+      <p class="complete-register">
+        Completa el formulario para ser parte del mundo de los Funkos
+      </p>
+      <div class="register-container">
+        <form class="form-container" action="">
+          <div class="user-register">
+            <label for="name">Nombre:</label>
+            <input
+              type="text"
+              class="borde_rojo input_texto input-register"
+              name=""
+              id=""
+              placeholder="Jhon"
+              value=""
+            />
+          </div>
+          <div class="user-register">
+            <label for="last-name">Apellido</label>
+            <input
+              type="text"
+              class="borde_rojo input_texto input-register"
+              name=""
+              id=""
+              placeholder="Doe"
+              value=""
+            />
+          </div>
+          <div class="user-register">
+            <label for="Email">Email:</label>
+            <input
+              type="text"
+              class="borde_rojo input_texto input-register"
+              name=""
+              id=""
+              placeholder="johndoe@correo.com"
+              value=""
+            />
+          </div>
+          <div class="password-register">
+            <label class="password-field" for="password">Contraseña:</label>
+            <input
+              type="password"
+              class="borde_rojo input_texto input-register"
+              name=""
+              id=""
+              placeholder="********"
+              value=""
+            />
+          </div>
+          <br />
+          <br />
+          <div class="re-password-register">
+            <label for="re-password">Repetir Contraseña:</label>
+            <input
+              type="password"
+              class="borde_rojo input_texto input-register"
+              name=""
+              id=""
+              placeholder="********"
+              value=""
+            />
+          </div>
+          <br />
+          <br />
+          <div class="sumit-container">
+            <input type="submit" class="boton_rojo" value="Registrar" />
+            <input type="checkbox" class="checkbox-register" value="" />
+            <p class="terms">
+              Acepto
+              <a href="terminos-y-condiciones.html" class="">
+                <span></span> Términos y Condiciones</a
+              >
+            </p>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <container class="footer-container">
+        <ul class="footer-link">
+          <li class="footer-li-item">
+            <a href="./shop.html" class="nav-menu-link nav-link">SHOP</a>
+          </li>
+          <li class="footer-li-item">
+            <a href="./contact.html" class="nav-menu-link nav-link">CONTACTO</a>
+          </li>
+          <li class="footer-li-item">
+            <a href="./login.html" class="nav-menu-link nav-link">LOGIN</a>
+          </li>
+        </ul>
+        <img
+          id="isotype"
+          src="../img/branding/isotype.svg"
+          alt="Logo de la marca"
+        />
+      </container>
+      <p id="footer-p">All rights reserved 2023 - Funkoshop &copy</p>
+    </footer>
+    <script src="../index.js"></script>
+  </body>
+</html>
