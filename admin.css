@@ -1,0 +1,251 @@
+/*estilos del main */
+
+.main_edit {
+  width: 70%;
+  margin-left: 80px;
+}
+
+h1 {
+  color: #1f1f1f;
+  font-size: 42px;
+  font-family: Raleway;
+  font-weight: 700;
+  letter-spacing: 1.68px;
+  word-wrap: break-word;
+}
+
+/*Aca estan los tamaño de los input*/
+
+input {
+  margin-right: 30px;
+  padding: 2px;
+}
+
+.input_texto {
+  color: #313131;
+  width: 243.03px;
+  height: 30.8px;
+  font-size: 20px;
+  font-family: Inter;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+label {
+  color: black;
+  margin-right: 10px;
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 300;
+  letter-spacing: 0.96px;
+  word-wrap: break-word;
+}
+
+::placeholder {
+  text-align: left;
+  color: #b9b9b9;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 400;
+  letter-spacing: 0.72px;
+  word-wrap: break-word;
+}
+
+.input_chico {
+  width: 45px;
+}
+
+.input_mediano {
+  width: 120px;
+}
+
+.input_grande {
+  width: 310px;
+}
+
+/*Esto es para sacar las flechitas del input Number*/
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/**/
+
+.renglon1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+select {
+  color: #727272;
+  border-radius: 6px;
+  width: 243.03px;
+  height: 30.8px;
+  font-size: 20px;
+  font-family: Inter;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+option {
+  color: #474747;
+}
+
+.borde_rojo {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: solid #ff3333 2px;
+}
+
+textarea {
+  text-align: left;
+  color: #252525;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 400;
+  letter-spacing: 0.72px;
+  word-wrap: break-word;
+  width: 100%;
+  height: 200px;
+  border-radius: 4px;
+  border: 0.5px #1f1f1f solid;
+}
+
+/*Estilo de los botones*/
+
+.boton_rojo {
+  background: #ff3333;
+  padding: 10px 30px;
+  border: 0;
+  color: white;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+/*Estilo imagenes */
+
+.imagenesfiguras {
+  width: 150px;
+}
+
+.figuras_imagenes {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.imagenesYTexto {
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  font-family: Raleway;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+/*register*/
+
+.main-register {
+  margin: 135px 0 0 0;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.complete-register {
+  font-family: Raleway;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 0.04em;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 35px;
+}
+
+.title-register {
+  margin: 0 0 35px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.sumit-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.terms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.checkbox-register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  padding: 0px;
+}
+
+.user-register {
+  justify-content: space-between;
+  display: flex;
+  margin: 0 0 2em;
+}
+.password-register {
+  justify-content: space-between;
+  display: flex;
+}
+
+.input-email {
+  width: 10em;
+}
+
+.input-password {
+  width: 10em;
+}
+
+.olvidar-contrasena {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2em auto;
+}
+.input-register {
+  width: 220px;
+}
+
+span {
+  margin: 0 0.25em;
+}
+
+.input-register:focus {
+  outline: none;
+}

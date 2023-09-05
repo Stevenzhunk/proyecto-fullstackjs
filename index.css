@@ -29,6 +29,11 @@ main {
   padding: 60px 60px 90px;
   margin-bottom: 30px;
 }
+
+.main_edit{
+  margin-top: 90px;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
