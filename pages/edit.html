@@ -43,61 +43,116 @@
     </header>
     <main class="main_edit">
       <h1>EDITAR ITEM</h1>
+      <br />
+      <br />
       <form action="">
-        <label for="">Categoria:</label>
-        <select name="" id="">
-          <option value="value1" selected>Figuras</option>
-        </select>
-        <label for="">Licencia:</label>
-        <select name="" id="">
-          <option value="value1" selected>Naruto Shippuden</option>
-          <option value="value2">Star Wars</option>
-          <option value="value3">Pokemon</option>
-          <option value="value4">Harry Potter</option>
-        </select>
-        <label for="">Nombre del producto:</label>
-        <input
-          type="text"
-          placeholder=""
-          value="Kakashi Hatake Shippuden Saga"
-        />
-        <textarea name="" id="" cols="30" rows="10">
-Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori.  </textarea
-        >
-        <label for="">SKU:</label>
-        <input
-          type="text"
-          name=""
-          id=""
-          placeholder="SSK111AB001"
-          value="NAR001012"
-        />
-        <label for="">Precio:</label>
-        <input type="number" placeholder="$1.799,00" value="$1.799,00" />
-        <label for="">Stock:</label>
-        <input type="number" placeholder="0" value="10" />
-        <label for="">Descuento</label>
-        <input type="number" placeholder="10%" value="10%" />
-        <label for="">Cuotas:</label>
-        <select name="" id="">
-          <option value="value1" selected>3 Cuotas sin interes</option>
-          <option value="value2">6 Cuotas sin interes</option>
-          <option value="value3">12 Cuotas sin interes</option>
-          <option value="value4">18 Cuotas sin interes</option>
-        </select>
-        <label for="">Imagenes:</label>
-        <input type="file" name="" id="" />
-        <div>
-          <picture>
-            <img src="../img/star-wars/baby-yoda-1.webp" alt="" />
-          </picture>
-          <p>Frente</p>
-          <picture>
-            <img src="../img/star-wars/baby-yoda-box.webp" alt="" />
-          </picture>
-          <p>Dorso</p>
+        <div class="renglon1">
+          <label for="categoria">Categoria:</label>
+          <select name="" id="categoria">
+            <option value="value1" selected>Figuras</option>
+          </select>
+          <label for="licencia">Licencia:</label>
+          <select name="" id="licencia">
+            <option value="value1" selected>Naruto Shippuden</option>
+            <option value="value2">Star Wars</option>
+            <option value="value3">Pokemon</option>
+            <option value="value4">Harry Potter</option>
+          </select>
         </div>
-        <input type="submit" value="Modificar Producto" />
+        <br />
+        <br />
+        <div class="renglon2">
+          <label for="">Nombre del producto:</label>
+          <input
+            class="borde_rojo input_texto input_grande"
+            placeholder="Escribe norma del producto"
+            value="Kakashi Hatake Shippuden Saga"
+          />
+        </div>
+        <br />
+        <br />
+        <div class="3renglon">
+          <textarea name="" id="" placeholder="Descripción del producto">
+Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori.
+          </textarea>
+        </div>
+        <br />
+        <br />
+        <div class="4renglon">
+          <label for="">SKU:</label>
+          <input
+            type="text"
+            class="borde_rojo input_texto input_mediano"
+            name=""
+            id=""
+            placeholder="SSK111AB001"
+            value="NAR001012"
+          />
+          <label for="">Precio:</label>
+          <input
+            type="number"
+            class="borde_rojo input_texto input_mediano"
+            placeholder="$ 0.000,00"
+            value="1799"
+          />
+          <label for="">Stock:</label>
+          <input
+            type="number"
+            class="borde_rojo input_texto input_chico"
+            placeholder="0"
+            value="10"
+          />
+        </div>
+        <br />
+        <br />
+        <div class="5renglon">
+          <label for="">Descuento</label>
+          <input
+            type="number"
+            class="borde_rojo input_texto input_chico"
+            placeholder="0%"
+            value="10"
+          />
+          <label for="">Cuotas:</label>
+          <select name="" id="">
+            <option value="" disabled selected hidden>
+              3 Cuotas sin interes
+            </option>
+            <option value="value1">3 Cuotas sin interes</option>
+            <option value="value2" selected>6 Cuotas sin interes</option>
+            <option value="value3">12 Cuotas sin interes</option>
+            <option value="value4">18 Cuotas sin interes</option>
+          </select>
+        </div>
+        <br />
+        <br />
+        <div class="6renglon">
+          <label for="">Imagenes:</label>
+          <input type="file" name="" id="" />
+        </div>
+        <br />
+        <br />
+        <div class="figuras_imagenes">
+          <div class="imagenesYTexto">
+            <picture>
+              <img src="../img/star-wars/baby-yoda-1.webp" class="borde_rojo" />
+            </picture>
+            <p>Frente</p>
+          </div>
+          <div class="imagenesYTexto">
+            <picture>
+              <img
+                src="../img/star-wars/baby-yoda-box.webp"
+                class="borde_rojo"
+                alt=""
+              />
+            </picture>
+            <p>Dorso</p>
+          </div>
+        </div>
+        <br />
+        <br />
+        <input type="submit" class="boton_rojo" value="Modificar Producto" />
       </form>
     </main>
     <footer class="footer">
