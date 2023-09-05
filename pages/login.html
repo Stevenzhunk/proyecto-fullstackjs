@@ -51,36 +51,28 @@
       </nav>
     </header>
     <main >
-      
-     <div class="login_main">
-       <container class="tittle_login">
-            <h1>INGRESAR A MI CUENTA</h1>
-          </container>
-            <form>
-              <div class="login_form">
-                <div>
-                    <ul class="list">
-                        <li>Email:</li>
-                        <li>Contraseña:</li>       
-                    </ul>
-                </div>
-                <div>
-                    <ul class ="list">    
-                        <li><input tipe="text" placeholder="jhondoe@correo.com"></li>
-                        <li><input tipe="password" placeholder="********"></li>
-                    </ul>
-                </div>
+     <div class="login-main">
+            <h1 class="login-tittle">INGRESAR A MI CUENTA</h1>
+           <div>
+            <form class="login-form">
+              <div class="user-register">
+                <label for="Email">Email:</label>
+                <input type="text" class="borde_rojo input_texto input-login" placeholder="johndoe@correo.com"/>
               </div>
+              <div class="password-register">
+                <label class="password-field" for="password">Contraseña:</label>
+                <input type="password"class="borde_rojo input_texto input-login" placeholder="********" />
           </form>
-          
-          <div class="actions">
-            <button class="login_btn">Ingresar</button>
-            <input type="checkbox" class="recordarme">
-            <label for="rememberme">Recordarme</label>
+           </div>
+          <div class="actions-login">
+            <button type="submit" class="boton_rojo">Ingresar</button>
+            <div class="recordarme">
+              <input type="checkbox" class="checkbox-login" >
+              <label class="recordarme-label">Recordarme</label>
+            </div>
           </div>      
-          
-                <a href="">Olvidé mi contraseña</a>
-              </div>
+                <a href="#" class="password-lost">Olvidé mi contraseña</a>
+          </div>
     </main>
     <footer class="footer">
       <container class="footer-container">

@@ -249,3 +249,55 @@ span {
 .input-register:focus {
   outline: none;
 }
+/*login*/
+.login-main{
+  margin-top: 144px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-content: space-between;
+}
+.login-tittle{
+  margin: 0 0 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-form{
+  display:flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.input-login:focus {
+  outline: none;
+}
+.actions-login{
+  display: flex; 
+  justify-content:space-around;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  align-items: center;
+}
+.checkbox-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  padding: 0px;
+}
+
+.recordarme{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.recordarme-label{
+font-size: 1rem;
+}
+
+.password-lost{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
