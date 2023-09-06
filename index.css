@@ -30,7 +30,7 @@ main {
   margin-bottom: 30px;
 }
 
-.main_edit{
+.main_edit {
   margin-top: 90px;
 }
 
@@ -388,6 +388,9 @@ main {
 
 .shop_paginas {
   align-self: stretch;
+}
+.item-container {
+  margin-top: 135px;
 }
 
 /* Media query para dispositivos móviles */
