@@ -301,7 +301,21 @@ span {
   display: flex;
   justify-content: center;
 }
-
+.boton-login{
+  display:flex;
+  background: #ff3333;
+  padding: 10px 30px;
+  border: 0;
+  color: white;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 600;
+  word-wrap: break-word;
+  cursor: pointer;
+}
+.boton-login :hover{
+  color: #313131;
+}
 /*responsive */
 
 /*register*/
