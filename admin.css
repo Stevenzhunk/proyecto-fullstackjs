@@ -312,6 +312,7 @@ span {
   font-weight: 600;
   word-wrap: break-word;
   cursor: pointer;
+  text-decoration: none;
 }
 .boton-login :hover{
   color: #313131;
