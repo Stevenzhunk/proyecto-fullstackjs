@@ -367,9 +367,9 @@ main {
 }
 /*secciones del shop*/
 
-.shop_main {
+/* .shop_main {
   display: flex;
-}
+} */
 
 .shop_buscador {
   min-width: 200px;
