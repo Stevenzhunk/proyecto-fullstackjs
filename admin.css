@@ -301,8 +301,8 @@ span {
   display: flex;
   justify-content: center;
 }
-.boton-login{
-  display:flex;
+.boton-login {
+  display: flex;
   background: #ff3333;
   padding: 10px 30px;
   border: 0;
@@ -314,8 +314,18 @@ span {
   cursor: pointer;
   text-decoration: none;
 }
-.boton-login :hover{
+.boton-login :hover {
   color: #313131;
+}
+/* contact */
+
+.message {
+  height: 10rem;
+}
+
+.message-register {
+  display: flex;
+  margin: 0 0 2em;
 }
 /*responsive */
 
