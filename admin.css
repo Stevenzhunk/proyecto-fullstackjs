@@ -4,7 +4,9 @@
   width: 70%;
   margin-left: 80px;
 }
-
+main {
+  margin-top: 144px;
+}
 h1 {
   color: var(--dark-solid);
   font-size: var(--font-display);
@@ -250,6 +252,9 @@ span {
   outline: none;
 }
 /*login*/
+
+
+
 .login-main {
   margin-top: 144px;
   display: flex;
@@ -326,6 +331,52 @@ span {
 .message-register {
   display: flex;
   margin: 0 0 2em;
+}
+
+/*admin*/
+
+.search-bar{
+  display: flex;
+margin: 10px;
+
+}
+
+.titles-table{
+  display: flex;
+  justify-content: space-between;
+ 
+}
+#add{
+  display: flex;
+  align-items: center;
+}
+table{
+  width: 100%;
+}
+th,td{
+  padding: 5px;
+}
+th{
+  text-align: left;
+}
+.icon-edit{
+  color: #1D84B5;
+  text-decoration: none;
+}
+.icon-delete{
+  color: #ff3333;
+  text-decoration: none;
+
+}
+.icons-edit-delete{
+  text-align: right;
+}
+#icon-add{
+  background-color: #ff3333;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
 }
 /*responsive */
 
