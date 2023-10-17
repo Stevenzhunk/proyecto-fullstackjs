@@ -1,10 +1,6 @@
-/*fonts*/
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 /*Raleway titulos grandes, display, enlacees nav.*/
 
-
-.root {
+:root {
   /*palette*/
   --primary-solid: #ff333f;
   --primary-900: rgb(255, 51, 63, 0.9);
@@ -22,12 +18,12 @@
   --dark-300: rgb(31, 31, 31, 0.3);
 
   --dark-bg-solid: #30343f;
-  --light-bg-solid: #fafafa;/*en figma 90% profe lo puso asi*/
+  --light-bg-solid: #fafafa; /*en figma 90% profe lo puso asi*/
   --light-font-solid: #ffff;
 
   /*typography*/
-  --base-font: "inter", sans-serif;
-  --alternative-font: "Raleway", sans-serif;
+  --base-font: 'inter', sans-serif;
+  --alternative-font: 'Raleway', sans-serif;
 
   /*font size*/
   --font-display: 4.6em;
@@ -46,6 +42,8 @@
   --spacing-16: 1.6rem;
   --spacing-12: 1.2rem;
   --spacing-8: 0.8rem;
+  --spacing-4: 0.4rem;
+  --spacing-2: 0.2rem;
 }
 
 *,
@@ -54,7 +52,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 
 html {
   font-family: var(--base-font);

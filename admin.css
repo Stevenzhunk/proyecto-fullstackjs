@@ -8,11 +8,11 @@ main {
   margin-top: 144px;
 }
 h1 {
-  color: #1f1f1f;
-  font-size: 42px;
-  font-family: Raleway;
+  color: var(--dark-solid);
+  font-size: var(--font-display);
+  font-family: var(--alternative-font);
+  letter-spacing: var(--spacing-2);
   font-weight: 700;
-  letter-spacing: 1.68px;
   word-wrap: break-word;
 }
 
@@ -67,8 +67,8 @@ label {
 
 /*Esto es para sacar las flechitas del input Number*/
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }

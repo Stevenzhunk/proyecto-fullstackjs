@@ -1,6 +1,6 @@
 /*fonts*/
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&display=swap');
 
 /* margen fixeado*/
 * {
@@ -123,7 +123,7 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("/img/funkos-banner.webp");
+  background-image: url('/img/funkos-banner.webp');
   background-size: cover;
   z-index: -1;
   border: 1px solid transparent;
@@ -393,11 +393,9 @@ main {
   margin-top: 135px;
 }
 
-
-
 /*Estilo del SHOP*/
 
-.container_shop{
+.container_shop {
   display: flex;
   flex-direction: row;
   margin-top: 135px;
@@ -405,8 +403,7 @@ main {
   /* border: solid red 2px; */
 }
 
-
-.shop_main{
+.shop_main {
   display: block;
   /* border: solid red 2px; */
   width: 80%;
@@ -415,30 +412,27 @@ main {
   margin-left: 30px;
 }
 
-.productos{
+.productos {
   position: relative;
   margin-bottom: 40px;
-  
 }
 
-.shop_paginas{
+.shop_paginas {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
   /* border: solid red 2px; */
 }
 
-.shop_paginas li{
+.shop_paginas li {
   display: flex;
   gap: 8px;
   list-style: none;
   /* border: solid red 2px; */
-  
 }
 
-.shop_paginas input{
-  
-  color: #212B36;
+.shop_paginas input {
+  color: #212b36;
   background-color: #ffffff;
   text-align: center;
   vertical-align: middle;
@@ -446,33 +440,31 @@ main {
   font-family: Inter;
   font-weight: 700;
   word-wrap: break-word;
-  border-radius: 4px; 
-  overflow: hidden; 
+  border-radius: 4px;
+  overflow: hidden;
   width: 44px;
   height: 44px;
-  border: 0.50px #DFE3E8 solid
+  border: 0.5px #dfe3e8 solid;
 }
 
-.primer_boton{
-  background-color: #919EAB !important;
-  color: #C4CDD5;
-
+.primer_boton {
+  background-color: #919eab !important;
+  color: #c4cdd5;
 }
 
-.pagina_seleccionada{
-  color: #FF3333 !important;
+.pagina_seleccionada {
+  color: #ff3333 !important;
   border: solid red 2px !important;
 }
 
 /*Aca comienza lo del buscador del SHOP - ASIDE*/
 
-.aside_shop{
+.aside_shop {
   padding-left: 40px;
   width: 20%;
 }
 
-
-.titulo_buscador{
+.titulo_buscador {
   color: #111111;
   font-size: 24px;
   font-family: Inter;
@@ -480,8 +472,8 @@ main {
   word-wrap: break-word;
 }
 
-.buscar ::placeholder{
-  color: #B9B9B9;
+.buscar ::placeholder {
+  color: #b9b9b9;
   font-size: 20px;
   font-family: Inter;
   font-weight: 500;
@@ -489,8 +481,8 @@ main {
   padding-left: 10px;
 }
 
-.placeholder_buscador{
-  color: #B9B9B9;
+.placeholder_buscador {
+  color: #b9b9b9;
   font-size: 20px;
   font-family: Inter;
   font-weight: 500;
@@ -498,64 +490,64 @@ main {
   padding-left: 10px;
 }
 
-.buscar input{
+.buscar input {
   width: 100%;
   height: 38px;
-  border-radius: 6px; 
-  border: 1px #30343F solid;
+  border-radius: 6px;
+  border: 1px #30343f solid;
 }
 
-.ordenar_por select{
+.ordenar_por select {
   width: 100%;
   height: 38px;
-  border-radius: 6px; 
-  border: 1px #30343F solid;
+  border-radius: 6px;
+  border: 1px #30343f solid;
 }
 
-.min_max{
+.min_max {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;  
+  align-items: center;
   width: 100%;
 }
 
-.min_max label{
+.min_max label {
   color: #111111;
   font-size: 16px;
   font-family: Inter;
   font-weight: 500;
-  word-wrap: break-word
+  word-wrap: break-word;
 }
 
-.min_max input{
-  border-radius: 6px; 
-  border: 1px #30343F solid;
+.min_max input {
+  border-radius: 6px;
+  border: 1px #30343f solid;
   width: 60px;
   text-align: center;
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.filtrar_seleccion{
+.filtrar_seleccion {
   margin-left: 20px;
   color: #111111;
   font-size: 18px;
   font-family: Inter;
   font-weight: 500;
-  word-wrap: break-word
+  word-wrap: break-word;
 }
 
-.my_checkbox{
+.my_checkbox {
   appearance: none;
   width: 20px;
   height: 20px;
-  border-radius: 6px; 
-  border: 1px #30343F solid;
+  border-radius: 6px;
+  border: 1px #30343f solid;
 }
 
 .my_checkbox:checked {
@@ -565,10 +557,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .my_checkbox:disabled {
   background-color: rgb(198, 198, 198);
   background-image: none;
-} 
-
-
-
+}
 
 /*responsive*/
 
