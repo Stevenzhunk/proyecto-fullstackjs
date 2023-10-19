@@ -1,6 +1,6 @@
 /*fonts*/
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&display=swap');
 
 /* margen fixeado*/
 * {
@@ -123,7 +123,7 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("/img/funkos-banner.webp");
+  background-image: url('/img/funkos-banner.webp');
   background-size: cover;
   z-index: -1;
   border: 1px solid transparent;
@@ -334,33 +334,42 @@ main {
 .articulo_franquicia {
   color: var(--gray-solid); /* original: #333333 */
   font-size: var(
-    --font-xsmall
+    --font-xxsmall
   ); /* original: 14px - me quedó de 28px aunque le puse 1.4em VER */
   font-weight: var(--weight-medium);
+  margin-bottom: 0.5em;
+  font-family: var(--base-font);
+  margin-top: 2em;
 }
 
 .articulo_titulo {
   color: var(--black-solid); /* original: #111111 */
   font-size: var(
-    --font-medium
+    --font-small
   ); /* original: 18px - me quedó de 36px aunque le puse 1.8em VER */
   font-weight: var(--weight-large);
+  margin-bottom: 0.5em;
+  font-family: var(--base-font);
 }
 
 .articulo_precio {
   color: var(--gray-solid); /* original: #333333 */
   font-size: var(
-    --font-small
+    --font-xsmall
   ); /* original: 16px - me quedó de 32px aunque le puse 1.6em VER */
   font-weight: var(--weight-small);
+  margin-bottom: 0.5em;
+  font-family: var(--base-font);
 }
 
 .articulo_cuotas {
   color: var(--secondary-solid); /* original: #1d84b5 */
   font-size: var(
-    --font-xxsmall
+    --font-tiny
   ); /* original: 12px - me quedó de 24px aunque le puse 1.2em VER */
   font-weight: var(--weight-large);
+  margin-bottom: 1em;
+  font-family: var(--base-font);
 }
 
 /* styles.css */
@@ -372,7 +381,7 @@ main {
 }
 /*style imagen shop*/
 .img-shop {
-  width: 20em;
+  width: 26em;
 }
 /*secciones del shop*/
 
@@ -388,6 +397,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  justify-content: space-around;
 }
 
 .shop_lista a {
@@ -407,8 +417,8 @@ main {
 .container_shop {
   display: flex;
   flex-direction: row;
-  margin-top: 135px;
-  padding-top: 20px;
+  margin-top: 15em;
+  padding: 5em 10em;
   /* border: solid red 2px; */
 }
 
@@ -548,8 +558,8 @@ se me volvía loco el texto si usaba todo igual a .placeholder buscador - VER */
   text-align: center;
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
