@@ -11,9 +11,12 @@
 
 /* cambio de letra y padding */
 body {
-  font-family: sans-serif;
+  font-family: var(--base-font-fix);
 }
 
+html {
+  font-family: Inter;
+}
 /* ajuste del nav (header) */
 .header {
   background-color: #30343f;
