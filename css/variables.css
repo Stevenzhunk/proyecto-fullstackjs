@@ -38,6 +38,7 @@
 
   /*typography*/
   --base-font: 'inter', sans-serif;
+  --base-font-fix: Inter;
   --alternative-font: 'Raleway', sans-serif;
 
   /*font size*/
@@ -80,7 +81,6 @@
 }
 
 html {
-  font-family: var(--base-font);
   font-size: 62.5%;
   color: var(--dark-solid);
 }
