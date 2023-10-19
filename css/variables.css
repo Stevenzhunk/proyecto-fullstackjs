@@ -2,10 +2,10 @@
 
 :root {
   /*palette*/
-  --primary-solid: #ff333f;
-  --primary-900: rgb(255, 51, 63, 0.9);
-  --primary-500: rgb(255, 51, 63, 0.5);
-  --primary-300: rgb(255, 51, 63, 0.3);
+  --primary-solid: #ff3333; /*original: ff333f */
+  --primary-900: rgb(255, 51, 51, 0.9); /* original: rgb(255, 51, 63, 0.9) */
+  --primary-500: rgb(255, 51, 51, 0.5); /* original: rgb(255, 51, 63, 0.5) */
+  --primary-300: rgb(255, 51, 51, 0.3); /* original: rgb(255, 51, 63, 0.3) */
 
   --secondary-solid: #1d84b5;
   --secondary-900: rgb(29, 132, 181, 0.9);
@@ -17,22 +17,39 @@
   --dark-500: rgb(31, 31, 31, 0.5);
   --dark-300: rgb(31, 31, 31, 0.3);
 
+  --black-solid: #111; /* agregué porque no estaba y es base de Tienda */
+  --black-900: rgb(17, 17, 17, 0.9);
+  --black-500: rgb(17, 17, 17, 0.5);
+  --black-300: rgb(17, 17, 17, 0.3);
+
+  --gray-solid: #333333; /* agregué porque no estaba y es el gris del artículo */
+  --gray-900: rgb(51, 51, 51, 0.9);
+  --gray-500: rgb(51, 51, 51, 0.5);
+  --gray-300: rgb(51, 51, 51, 0.3);
+
+  --light-gray-solid: #b9b9b9; /* agregué por que no había grises para pre-completado de forms */
+  --light-gray-900: rgb(185, 185, 185, 0.9);
+  --light-gray-500: rgb(185, 185, 185, 0.5);
+  --light-gray-300: rgb(185, 185, 185, 0.3);
+
   --dark-bg-solid: #30343f;
   --light-bg-solid: #fafafa; /*en figma 90% profe lo puso asi*/
   --light-font-solid: #ffff;
 
   /*typography*/
-  --base-font: 'inter', sans-serif;
-  --alternative-font: 'Raleway', sans-serif;
+  --base-font: "inter", sans-serif;
+  --alternative-font: "Raleway", sans-serif;
 
   /*font size*/
   --font-display: 4.6em;
   --font-jumbo: 3.8em;
   --font-xlarge: 3em;
-  --font-xlarge: 2.4em;
+  --font-large: 2.4em; /* decía xlarge, pero ya había una xlarge y no había large */
+  --font-intermediate: 2em; /* tuve que agregar para placeholder de 20px */
   --font-medium: 1.8em;
   --font-small: 1.6em;
-  --font-medium: 1.2em;
+  --font-xsmall: 1.4em;
+  --font-xxsmall: 1.2em; /* decía font-medium pero era más chica que la small */
 
   /*spacing*/
   --spacing-128: 12.8rem; /*font responsive*/
@@ -44,6 +61,11 @@
   --spacing-8: 0.8rem;
   --spacing-4: 0.4rem;
   --spacing-2: 0.2rem;
+
+  /*font weight*/ /* agregué porque vi que se repetían mucho tres tamaños */
+  --weight-large: 700;
+  --weight-medium: 500;
+  --weight-small: 400;
 }
 
 *,
@@ -76,9 +98,13 @@ footer {
   color: var(--light-font-solid);
 }
 
+/* anulé en base a lo hablado en Discord
+
 p {
   font-size: 1.8em;
 }
+
+*/
 
 .container {
   max-width: 1200px;
