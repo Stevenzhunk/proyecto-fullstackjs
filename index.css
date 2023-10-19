@@ -315,14 +315,14 @@ main {
   position: absolute;
   right: 0px;
   padding: 7px 20px;
-  background-color: var(--primary-solid); /* original: #ff3333 */
+  background-color: var(--primary-solid); /*  original: #ff3333 */
   color: var(--light-font-solid); /*original: #f5f5f5 */
   font-family: var(--base-font); /* original: no tenía font esta clase */
   border-radius: 7px;
 }
 
 .lanzamientos img {
-  width: 18rem;
+  width: 30rem;
 }
 
 .articulo {
@@ -345,7 +345,7 @@ main {
 .articulo_titulo {
   color: var(--black-solid); /* original: #111111 */
   font-size: var(
-    --font-small
+    --font-xsmall
   ); /* original: 18px - me quedó de 36px aunque le puse 1.8em VER */
   font-weight: var(--weight-large);
   margin-bottom: 0.5em;
