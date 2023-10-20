@@ -366,10 +366,14 @@ th{
 .icon-delete{
   color: #ff3333;
   text-decoration: none;
+  
 
 }
 .icons-edit-delete{
   text-align: right;
+  display: flex;
+  flex-direction: row;
+  gap:5px;
 }
 #icon-add{
   background-color: #ff3333;
