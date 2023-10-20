@@ -298,6 +298,7 @@ main {
 
 .ultimos_lanzamientos {
   width: 100%;
+  padding-top: 50px;
 }
 
 .lanzamientos_lista {
@@ -353,6 +354,37 @@ main {
   font-weight: var(--weight-large);
   margin-bottom: 0.5em;
   font-family: var(--base-font);
+}
+
+.articulo__cover{
+  display: flex;
+}
+
+.articulo__cover img{
+  animation: fade .4s;
+}
+
+.articulo__img--back{
+  display: none;
+}
+
+.articulo__cover:hover .articulo__img--back {
+  display: block;
+  
+}
+
+.articulo__cover:hover .articulo__img--front {
+  display: none;
+  
+}
+
+@keyframes fade{
+  0% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 
 .articulo_precio {
