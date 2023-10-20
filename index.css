@@ -11,9 +11,12 @@
 
 /* cambio de letra y padding */
 body {
-  font-family: sans-serif;
+  font-family: var(--base-font-fix);
 }
 
+html {
+  font-family: Inter;
+}
 /* ajuste del nav (header) */
 .header {
   background-color: #30343f;
@@ -295,6 +298,7 @@ main {
 
 .ultimos_lanzamientos {
   width: 100%;
+  padding-top: 50px;
 }
 
 .lanzamientos_lista {
@@ -315,43 +319,92 @@ main {
   position: absolute;
   right: 0px;
   padding: 7px 20px;
-  background-color: #ff3333;
-  color: #f5f5f5;
+  background-color: var(--primary-solid); /*  original: #ff3333 */
+  color: var(--light-font-solid); /*original: #f5f5f5 */
+  font-family: var(--base-font); /* original: no tenía font esta clase */
   border-radius: 7px;
 }
 
 .lanzamientos img {
-  width: 18rem;
+  width: 30rem;
 }
 
 .articulo {
   position: relative;
-  font-family: Inter;
+  font-family: var(--base-font); /* original: Inter */
   word-wrap: break-word;
 }
 
 .articulo_franquicia {
-  color: #333333;
-  font-size: 14px;
-  font-weight: 500;
+  color: var(--gray-solid); /* original: #333333 */
+  font-size: var(
+    --font-xxsmall
+  ); /* original: 14px - me quedó de 28px aunque le puse 1.4em VER */
+  font-weight: var(--weight-medium);
+  margin-bottom: 0.5em;
+  font-family: var(--base-font);
+  margin-top: 2em;
 }
 
 .articulo_titulo {
-  color: #111111;
-  font-size: 18px;
-  font-weight: 700;
+  color: var(--black-solid); /* original: #111111 */
+  font-size: var(
+    --font-xsmall
+  ); /* original: 18px - me quedó de 36px aunque le puse 1.8em VER */
+  font-weight: var(--weight-large);
+  margin-bottom: 0.5em;
+  font-family: var(--base-font);
+}
+
+.articulo__cover{
+  display: flex;
+}
+
+.articulo__cover img{
+  animation: fade .4s;
+}
+
+.articulo__img--back{
+  display: none;
+}
+
+.articulo__cover:hover .articulo__img--back {
+  display: block;
+  
+}
+
+.articulo__cover:hover .articulo__img--front {
+  display: none;
+  
+}
+
+@keyframes fade{
+  0% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 
 .articulo_precio {
-  color: #333333;
-  font-size: 16px;
-  font-weight: 400;
+  color: var(--gray-solid); /* original: #333333 */
+  font-size: var(
+    --font-xsmall
+  ); /* original: 16px - me quedó de 32px aunque le puse 1.6em VER */
+  font-weight: var(--weight-small);
+  margin-bottom: 0.5em;
+  font-family: var(--base-font);
 }
 
 .articulo_cuotas {
-  color: #1d84b5;
-  font-size: 12px;
-  font-weight: 700;
+  color: var(--secondary-solid); /* original: #1d84b5 */
+  font-size: var(
+    --font-tiny
+  ); /* original: 12px - me quedó de 24px aunque le puse 1.2em VER */
+  font-weight: var(--weight-large);
+  margin-bottom: 1em;
+  font-family: var(--base-font);
 }
 
 /* styles.css */
@@ -363,7 +416,7 @@ main {
 }
 /*style imagen shop*/
 .img-shop {
-  width: 20em;
+  width: 26em;
 }
 /*secciones del shop*/
 
@@ -379,6 +432,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  justify-content: space-around;
 }
 
 .shop_lista a {
@@ -398,8 +452,8 @@ main {
 .container_shop {
   display: flex;
   flex-direction: row;
-  margin-top: 135px;
-  padding-top: 20px;
+  margin-top: 15em;
+  padding: 5em 10em;
   /* border: solid red 2px; */
 }
 
@@ -432,29 +486,38 @@ main {
 }
 
 .shop_paginas input {
-  color: #212b36;
-  background-color: #ffffff;
+  color: var(--gray-900)
+    /* original: #212b36 - FIGMA tiene: #212B36 - use otro para normalizar */;
+  background-color: var(
+    --light-bg-color
+  ); /* original: #ffffff - no es exacto pero no quice seguir agregando colores */
   text-align: center;
   vertical-align: middle;
-  font-size: 16px;
-  font-family: Inter;
-  font-weight: 700;
+  font-size: var(--font-small); /* original: 16px */
+  font-family: var(--base-font); /* original: Inter */
+  font-weight: var(--weight-large);
   word-wrap: break-word;
   border-radius: 4px;
   overflow: hidden;
   width: 44px;
   height: 44px;
-  border: 0.5px #dfe3e8 solid;
+  border: 0.5px var(--light-bg-solid) solid; /* original: #dfe3e8 */
 }
 
 .primer_boton {
-  background-color: #919eab !important;
-  color: #c4cdd5;
+  background-color: var(
+    --light-gray-500
+  ) !important; /*original #919eab - cambié para no agregar más colores*/
+  color: var(
+    --light-gray-900
+  ); /* original #c4cdd5 - cambié para no agregar más colores, pero no me lo toma - VER */
 }
 
 .pagina_seleccionada {
-  color: #ff3333 !important;
-  border: solid red 2px !important;
+  color: var(
+    --primary-solid
+  ) !important; /* FIGMA es #F33 - cambié para no agregar más colores*/
+  border: solid var(--primary-solid) 2px !important; /* FIGMA es #F33 - cambié para no agregar más colores*/
 }
 
 /*Aca comienza lo del buscador del SHOP - ASIDE*/
@@ -465,12 +528,15 @@ main {
 }
 
 .titulo_buscador {
-  color: #111111;
-  font-size: 24px;
-  font-family: Inter;
-  font-weight: 500;
+  color: var(--black-solid); /* debería ser #111 */
+  font-size: var(--font-large);
+  font-family: var(--base-font); /* original: Inter */
+  font-weight: var(--weight-medium);
   word-wrap: break-word;
 }
+
+/* no pude normalizar esta clase .buscar ::placeholder; 
+se me volvía loco el texto si usaba todo igual a .placeholder buscador - VER */
 
 .buscar ::placeholder {
   color: #b9b9b9;
@@ -482,10 +548,10 @@ main {
 }
 
 .placeholder_buscador {
-  color: #b9b9b9;
-  font-size: 20px;
-  font-family: Inter;
-  font-weight: 500;
+  color: var(--light-gray-solid); /* original: #b9b9b9 */
+  font-size: var(--font-intermediate); /* original: 20px */
+  font-family: var(--base-font); /* original: Inter */
+  font-weight: var(--weight-medium);
   word-wrap: break-word;
   padding-left: 10px;
 }
@@ -494,14 +560,14 @@ main {
   width: 100%;
   height: 38px;
   border-radius: 6px;
-  border: 1px #30343f solid;
+  border: 1px var(--dark-bg-solid) solid; /* original: #30343f */
 }
 
 .ordenar_por select {
   width: 100%;
   height: 38px;
   border-radius: 6px;
-  border: 1px #30343f solid;
+  border: 1px var(--dark-bg-solid) solid; /* original: #30343f */
 }
 
 .min_max {
@@ -513,10 +579,10 @@ main {
 }
 
 .min_max label {
-  color: #111111;
-  font-size: 16px;
-  font-family: Inter;
-  font-weight: 500;
+  color: var(--black-solid); /* original: #111111 */
+  font-size: var(--font-small); /* original: 16px */
+  font-family: var(--base-font); /* original: Inter */
+  font-weight: var(--weight-medium);
   word-wrap: break-word;
 }
 
@@ -535,10 +601,10 @@ input[type='number']::-webkit-outer-spin-button {
 
 .filtrar_seleccion {
   margin-left: 20px;
-  color: #111111;
-  font-size: 18px;
-  font-family: Inter;
-  font-weight: 500;
+  color: var(--black-solid); /* original: #111111 */
+  font-size: var(--font-medium); /* original: 18px */
+  font-family: var(--base-font); /* original: Inter */
+  font-weight: var(--weight-medium);
   word-wrap: break-word;
 }
 
@@ -547,34 +613,18 @@ input[type='number']::-webkit-outer-spin-button {
   width: 20px;
   height: 20px;
   border-radius: 6px;
-  border: 1px #30343f solid;
+  border: 1px var(--dark-bg-solid) solid; /* original: #30343f */
 }
 
 .my_checkbox:checked {
-  background-color: rgb(0, 141, 0);
+  background-color: var(
+    --secondary-solid
+  ); /* original: rgb(0, 141, 0) - normalicé con paleta */
 }
 
 .my_checkbox:disabled {
-  background-color: rgb(198, 198, 198);
+  background-color: var(
+    --light-bg-solid
+  ); /* original: rgb(198, 198, 198) - normalicé con paleta */
   background-image: none;
 }
-
-/*responsive*/
-
-/* reparar shop_paginas para que quede centrado */
-
-/* 
-
-.productos {
-  display: inline-block;
-}
-
-#label-buscar {
-  display: block;
-}
-
-#ordenar {
-  display: block;
-}
-
- */
