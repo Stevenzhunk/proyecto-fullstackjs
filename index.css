@@ -435,7 +435,7 @@ body {
   align-self: stretch;
 }
 .item-container {
-  margin-top: 135px;
+  margin-top: var(--spacing-128);
 }
 
 /*Estilo del SHOP*/
@@ -444,6 +444,7 @@ body {
   display: flex;
   flex-direction: row;
   margin-top: 15em;
+  
   padding: 5em 10em;
   /* border: solid red 2px; */
 }

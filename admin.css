@@ -66,8 +66,8 @@ label {
 
 /*Esto es para sacar las flechitas del input Number*/
 
-input[type='number']::-webkit-inner-spin-button,
-input[type='number']::-webkit-outer-spin-button {
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
@@ -255,7 +255,7 @@ span {
 /*login*/
 
 .login-main {
-  margin: var(--spacing-16) ;
+  margin: var(--spacing-16);
   padding-top: var(--spacing-36);
   display: flex;
   justify-content: center;
@@ -268,13 +268,13 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size:var(--font-jumbo) ;
+  font-size: var(--font-jumbo);
   text-transform: uppercase;
 }
 .login-form {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: var(--spacing-12);
 }
 .input-login:focus {
   outline: none;
@@ -282,15 +282,15 @@ span {
 .actions-login {
   display: flex;
   justify-content: space-around;
-  padding: 0.5rem;
-  margin: 0.5rem;
+  padding: var(--spacing-16);
+  margin: var(--spacing-8);
   align-items: center;
 }
 .checkbox-login {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5px;
+  margin: var(--spacing-8);
   padding: 0px;
 }
 
@@ -307,22 +307,19 @@ span {
   display: flex;
   justify-content: center;
   font-size: var(--font-small);
+  color: var(--secondary-solid);
 }
 .boton-login {
   display: flex;
-  background: #ff3333;
-  padding: 10px 30px;
-  border: 0;
-  color: white;
-  font-size: 14px;
-  font-family: Inter;
-  font-weight: 600;
+  background: var(--primary-solid);
+  padding: var(--spacing-8) var(--spacing-28);
+  color: var(--light-font-solid);
+  font-size: var(--font-medium);
+  font-family: var(--base-font-fix);
+  font-weight: var(--weight-large);
   word-wrap: break-word;
   cursor: pointer;
   text-decoration: none;
-}
-.boton-login :hover {
-  color: #313131;
 }
 /* contact */
 
@@ -336,51 +333,78 @@ span {
 }
 
 /*admin*/
-
-.search-bar{
+.main-admin {
+  margin: var(--spacing-128) var(--spacing-68);
+  padding-top: var(--spacing-28);
+}
+.search-bar {
   display: flex;
-margin: 10px;
-
+  margin: var(--spacing-12);
 }
 
-.titles-table{
+.titles-table {
   display: flex;
   justify-content: space-between;
- 
 }
-#add{
-  display: flex;
-  align-items: center;
+
+.title-list-products {
+  font: var(--alternative-font);
+  font-size: var(--font-jumbo);
+  font-weight: var(--weight-large);
+  text-transform: uppercase;
 }
-table{
+
+.title-add {
+  font: var(--base-font-fix);
+  font-size: var(--font-intermediate);
+  font-weight: var(--weight-large);
+  text-transform: uppercase;
+}
+table {
   width: 100%;
 }
-th,td{
-  padding: 5px;
+.icon-edit {
+  color: var(--secondary-solid);
+  text-decoration: none;
 }
-th{
+.icon-delete {
+  color: var(--primary-solid);
+  text-decoration: none;
+}
+.table-description {
+  font: var(--base-font-fix);
+  font-size: var(--font-intermediate);
+  font-weight: var(--weight-large);
   text-align: left;
+  padding-top: var(--spacing-16);
+  padding-bottom: var(--spacing-16);
+  padding-left: var(--spacing-16);
 }
-.icon-edit{
-  color: #1D84B5;
-  text-decoration: none;
+.table-item {
+  font: var(--base-font-fix);
+  font-size: var(--font-medium);
+  font-weight: var(--weight-small);
+  padding-top: var(--spacing-16);
+  padding-left: var(--spacing-16);
+  padding-bottom: var(--spacing-16);
 }
-.icon-delete{
-  color: #ff3333;
-  text-decoration: none;
-  
-
-}
-.icons-edit-delete{
-  text-align: right;
+#add {
   display: flex;
   flex-direction: row;
-  gap:5px;
+  align-items: center;
+  gap: var(--spacing-4);
+  margin: var(--spacing-12);
 }
-#icon-add{
-  background-color: #ff3333;
-  color: white;
-  border-radius: 5px;
+.icons-edit-delete {
+  
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-4);
+}
+#icon-add {
+  background-color: var(--primary-solid);
+  color: var(--light-font-solid);
+  border-radius: var(--spacing-4);
   display: flex;
   justify-content: center;
 }
@@ -388,7 +412,6 @@ th{
 
 /*register*/
 @media (max-width: 768px) {
-  
   .input-register {
     width: 8em;
   }
@@ -400,9 +423,5 @@ th{
   }
   .boton_rojo {
     margin-bottom: 2em;
-  }
-  .footer-navbar{
-    display: flex;
-    flex-direction: column;
   }
 }
