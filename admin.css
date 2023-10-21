@@ -12,7 +12,7 @@ h1 {
   font-size: var(--font-display);
   font-family: var(--alternative-font);
   letter-spacing: var(--spacing-2);
-  font-weight: 700;
+  font-weight: var(--weight-large);
   word-wrap: break-word;
 }
 
@@ -34,12 +34,11 @@ input {
 }
 
 label {
-  color: black;
-  margin-right: 10px;
-  font-size: 24px;
-  font-family: Inter;
-  font-weight: 300;
-  letter-spacing: 0.96px;
+  color: var(--dark-solid);
+  margin-right: var(--spacing-8);
+  font-size: var(--font-medium);
+  font-family: var(--base-font-fix);
+  font-weight: var(--weight-small);
   word-wrap: break-word;
 }
 
@@ -99,7 +98,7 @@ option {
   border-top: 0;
   border-left: 0;
   border-right: 0;
-  border-bottom: solid #ff3333 2px;
+  border-bottom: solid var(--primary-solid) 2px;
 }
 
 textarea {
@@ -218,8 +217,9 @@ textarea {
 
 .user-register {
   justify-content: space-between;
+  align-items: center;
   display: flex;
-  margin: 0 0 2em;
+  margin: 0 0 var(--spacing-16);
 }
 .password-register {
   justify-content: space-between;
@@ -251,12 +251,12 @@ span {
 .input-register:focus {
   outline: none;
 }
+
 /*login*/
 
-
-
 .login-main {
-  margin-top: 144px;
+  margin: var(--spacing-16) ;
+  padding-top: var(--spacing-36);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -264,10 +264,12 @@ span {
   align-content: space-between;
 }
 .login-tittle {
-  margin: 0 0 35px;
+  margin: 0 0 var(--spacing-36);
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size:var(--font-jumbo) ;
+  text-transform: uppercase;
 }
 .login-form {
   display: flex;
@@ -292,19 +294,19 @@ span {
   padding: 0px;
 }
 
-.recordarme {
+.rememberme {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.recordarme-label {
-  font-size: 1rem;
+.rememberme-label {
+  font-size: var(--font-medium);
 }
 
 .password-lost {
-  text-decoration: none;
   display: flex;
   justify-content: center;
+  font-size: var(--font-small);
 }
 .boton-login {
   display: flex;
@@ -386,9 +388,7 @@ th{
 
 /*register*/
 @media (max-width: 768px) {
-  label {
-    font-size: 1em;
-  }
+  
   .input-register {
     width: 8em;
   }
@@ -400,5 +400,9 @@ th{
   }
   .boton_rojo {
     margin-bottom: 2em;
+  }
+  .footer-navbar{
+    display: flex;
+    flex-direction: column;
   }
 }
