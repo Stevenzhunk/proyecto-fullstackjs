@@ -1,6 +1,6 @@
 /*fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&display=swap");
 
 /* margen fixeado*/
 * {
@@ -14,9 +14,6 @@ body {
   font-family: var(--base-font-fix);
 }
 
-html {
-  font-family: Inter;
-}
 /* ajuste del nav (header) */
 .header {
   background-color: #30343f;
@@ -28,11 +25,11 @@ html {
   z-index: 2;
 }
 
-main {
-  padding: 60px 60px 90px;
-  margin-bottom: 30px;
+/*main {
+  padding: var(--spacing-68);
+  margin-bottom: var(--spacing-28);
 }
-
+*/
 .main_edit {
   margin-top: 90px;
 }
@@ -77,12 +74,11 @@ main {
   /*max-width: 992px;*/
   margin: 0 auto;
   flex-wrap: inherit;
-  font-size: 1rem;
+  font-size: var(--font-medium);
 }
 
 .nav-link {
   color: white;
-  text-decoration: none;
 }
 
 .nav-link:hover {
@@ -126,7 +122,7 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/img/funkos-banner.webp');
+  background-image: url("/img/funkos-banner.webp");
   background-size: cover;
   z-index: -1;
   border: 1px solid transparent;
@@ -185,36 +181,37 @@ main {
 
 /* agregamos estilos al footer */
 .footer {
-  background-color: #30343f;
-  bottom: 0px;
-  left: 0px;
-  width: 100%;
-  height: 343px;
-  flex-shrink: 0;
-  padding-left: 110px;
-  padding-right: 110px;
+  background-color: var(--dark-bg-solid);
+  display: flex;
+  flex-direction: column;
+  padding-left: var(--spacing-68);
+  padding-right: var(--spacing-68);
+  padding-bottom: var(--spacing-28);
 }
-.footer-container {
+.footer-navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 124px;
-  padding-bottom: 57px;
+  align-items: center;
+  padding-top: var(--spacing-68);
+  padding-bottom: var(--spacing-68);
 }
 .footer-li-item {
-  padding-top: 8px;
+  padding-top: var(--spacing-8);
+  text-transform: uppercase;
+  font-size: var(--font-small);
 }
 
-.footer-link {
-  list-style: none;
-}
 #footer-p {
-  color: #ffffff;
+  color: var(--light-font-solid);
   display: flex;
   justify-content: center;
+  font-size: var(--font-small);
+  
+
 }
 #isotype {
-  width: 143px;
+  width: var(--spacing-128);
 }
 
 .menu-toggle {
@@ -356,33 +353,31 @@ main {
   font-family: var(--base-font);
 }
 
-.articulo__cover{
+.articulo__cover {
   display: flex;
 }
 
-.articulo__cover img{
-  animation: fade .4s;
+.articulo__cover img {
+  animation: fade 0.4s;
 }
 
-.articulo__img--back{
+.articulo__img--back {
   display: none;
 }
 
 .articulo__cover:hover .articulo__img--back {
   display: block;
-  
 }
 
 .articulo__cover:hover .articulo__img--front {
   display: none;
-  
 }
 
-@keyframes fade{
+@keyframes fade {
   0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
@@ -420,10 +415,6 @@ main {
 }
 /*secciones del shop*/
 
-/* .shop_main {
-  display: flex;
-} */
-
 .shop_buscador {
   min-width: 200px;
 }
@@ -444,7 +435,7 @@ main {
   align-self: stretch;
 }
 .item-container {
-  margin-top: 135px;
+  margin-top: var(--spacing-128);
 }
 
 /*Estilo del SHOP*/
@@ -453,6 +444,7 @@ main {
   display: flex;
   flex-direction: row;
   margin-top: 15em;
+  
   padding: 5em 10em;
   /* border: solid red 2px; */
 }
@@ -593,8 +585,8 @@ se me volvía loco el texto si usaba todo igual a .placeholder buscador - VER */
   text-align: center;
 }
 
-input[type='number']::-webkit-inner-spin-button,
-input[type='number']::-webkit-outer-spin-button {
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
