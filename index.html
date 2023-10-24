@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FunkoShop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="responsive.css" />
     <link rel="stylesheet" href="./css/variables.css" />
@@ -107,15 +109,15 @@
           />
         </picture>
       </section>
-      <section class="lanzamientos">
-        <h2>ULTIMOS LANZAMIENTOS</h2>
-        <div class="ultimos_lanzamientos">
-          <ul class="lanzamientos_lista">
-            <li>
+      <section class="lanzamientos glide">
+        <h2 class="lanzamientos__titulo">ULTIMOS LANZAMIENTOS</h2>
+        <div class="ultimos_lanzamientos glide__track" data-glide-el="track">
+          <ul class="lanzamientos_lista glide__slides">
+            <li class="glide__slide">
               <article class="articulo">
                 <a href="/pages/shop.html">
-                  <div class="nuevo">Nuevo</div>
                   <picture class="articulo__cover">
+                    <spam class="nuevo">Nuevo</spam>
                     <img
                       class="articulo__img--back"
                       src="./img/star-wars/trooper-box.webp"
@@ -136,7 +138,7 @@
                 </a>
               </article>
             </li>
-            <li>
+            <li class="glide__slide">
               <article class="articulo">
                 <a href="/pages/shop.html">
                   <div class="nuevo">Nuevo</div>
@@ -161,7 +163,7 @@
                 </a>
               </article>
             </li>
-            <li>
+            <li class="glide__slide">
               <article class="articulo">
                 <a href="/pages/shop.html">
                   <div class="nuevo">Nuevo</div>
@@ -188,6 +190,10 @@
             </li>
           </ul>
         </div>
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><iconify-icon icon="ic:baseline-chevron-left"></iconify-icon></button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><iconify-icon icon="ic:baseline-chevron-right"></iconify-icon></button>
+        </div>
       </section>
     </main>
     <footer class="footer">
@@ -213,5 +219,24 @@
       <p id="footer-p">All rights reserved 2023 - Funkoshop &copy</p>
     </footer>
     <script src="index.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+    <script src="https://unpkg.com/@glidejs/glide"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+      new Glide('.glide', {
+        type: 'carousel',
+        startAt: 0,
+        perView: 3,
+        gap: 40,
+        breakpoint: {
+          991: {
+            perView: 2
+          },
+          768: {
+            perView: 1
+          }
+        }
+      }).mount();
+    </script>
   </body>
 </html>
