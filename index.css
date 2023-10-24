@@ -22,14 +22,14 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 2000;
 }
 
-/*main {
+main {
   padding: var(--spacing-68);
   margin-bottom: var(--spacing-28);
 }
-*/
+
 .main_edit {
   margin-top: 90px;
 }
@@ -282,7 +282,7 @@ body {
   justify-content: center;
   align-content: center;
 }
-/* Seccion ultimos lanzamientos */
+/* Seccion ultimos lanzamientos - slider*/
 
 .lanzamientos h2 {
   color: #111111;
@@ -298,12 +298,18 @@ body {
   padding-top: 50px;
 }
 
-.lanzamientos_lista {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  list-style: none;
-  padding: 2rem;
+iconify-icon{
+  color: var(--dark-solid );
+  font-size: var(--font-small);
+  font-weight: 700;
+}
+
+.glide__arrow--left{
+  left: 0;
+}
+
+.glide__arrow--right{
+  right: 0;
 }
 
 .lanzamientos_lista a {
