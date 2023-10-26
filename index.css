@@ -26,6 +26,7 @@ body {
 }
 
 main {
+  max-width: 100%;
   padding: var(--spacing-68);
   margin-bottom: var(--spacing-28);
 }
@@ -334,6 +335,7 @@ iconify-icon{
 
 .articulo {
   position: relative;
+  max-width: 300px;
   font-family: var(--base-font); /* original: Inter */
   word-wrap: break-word;
 }
