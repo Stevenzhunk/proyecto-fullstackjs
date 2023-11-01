@@ -5,7 +5,7 @@
   margin-left: 80px;
 }
 main {
-  margin-top: 144px;
+  margin-top: var(--spacing-128)
 }
 h1 {
   color: var(--dark-solid);
@@ -118,13 +118,13 @@ textarea {
 /*Estilo de los botones*/
 
 .boton_rojo {
-  background: #ff3333;
-  padding: 10px 30px;
+  background: var(--primary-solid);
+  padding: var(--spacing-8) var(--spacing-28);
   border: 0;
-  color: white;
-  font-size: 14px;
-  font-family: Inter;
-  font-weight: 600;
+  color: var(--light-font-solid);
+  font-size: var(--font-medium);
+  font-family: var(--base-font-fix);
+  font-weight: var(--weight-large);
   word-wrap: break-word;
 }
 
