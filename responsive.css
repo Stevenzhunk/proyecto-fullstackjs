@@ -58,7 +58,9 @@
   article {
     margin-bottom: 50px;
   }
-
+  .card_resume{
+    max-width: 70%;
+  }
   /* Ultimos lanzamientos */
 
   .lanzamientos h2 {
@@ -91,6 +93,9 @@
 
   .shop_main{
     width: 100%;
+  }
+  .red__button_pay{
+    width: 70%;
   }
 }
 
@@ -192,5 +197,14 @@
 
     .shop_main{
       width: 100%;
+    }
+    .main__cart{
+      padding: var(--spacing-12);
+    }
+    .card_resume{
+      max-width: 70%;
+    }
+    .red__button_pay{
+      width: 70%;
     }
   }
