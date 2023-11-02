@@ -440,8 +440,100 @@ iconify-icon {
 .shop_paginas {
   align-self: stretch;
 }
-.item-container {
-  margin-top: var(--spacing-128);
+
+/* Estilos del Item */
+
+.item_container {
+  /*  margin-top: var(--spacing-128); - ver si dejo, es lo único que había de css del item-container - */
+  display: flex;
+  font-family: var(--base-font);
+  justify-content: center;
+}
+
+.caja_article {
+  display: flex;
+  align-content: center;
+}
+
+.item_texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item_franquicia {
+  font-size: var(--font-small);
+  color: var(--gray-solid);
+}
+
+.item_titulo {
+  font-size: var(--font-jumbo);
+  padding-top: 7.5px;
+}
+.item_descripcion {
+  font-size: var(--font-large);
+  color: var(--gray-solid);
+  max-width: 570px;
+  padding-top: 7.5px;
+}
+.item_precio {
+  font-size: var(--font-jumbo);
+  color: var(--gray-solid);
+  padding-top: 7.5px;
+}
+
+#cantidad_carrito {
+  padding-top: 7.5px;
+}
+
+#cantidad {
+  font-size: var(--font-large);
+  color: var(--gray-solid);
+  width: 105.467px;
+  height: 35.241px;
+}
+
+#aumentar-disminuir {
+  display: flex inline;
+  flex-direction: column;
+}
+
+#boton_aumentar {
+  font-size: var(--font-large);
+  background: var(--gray-solid); /* en realidad es #4F4F4F */
+  color: var(--light-font-solid);
+  width: 20px;
+  height: 20px;
+  padding: 4px;
+  border: 0;
+}
+#boton_disminuir {
+  font-size: var(--font-tiny);
+  background: var(--gray-solid); /* en realidad es #4F4F4F */
+  color: var(--light-font-solid);
+  width: 20px;
+  height: 20px;
+  padding: 4px;
+  border: 0;
+}
+.agregar_item {
+  font-size: var(--font-medium);
+  color: var(--light-font-solid);
+  border-radius: 0%;
+  border-width: 0cap;
+  width: 181px;
+  height: 35.241px;
+  background: var(--primary-solid);
+}
+
+.item_metodos {
+  font-size: var(--font-xsmall);
+  color: var(--secondary-solid);
+  padding-top: 7.5px;
+}
+
+#item_link_metodos {
+  text-decoration-line: underline;
 }
 
 /*Estilo del SHOP*/
